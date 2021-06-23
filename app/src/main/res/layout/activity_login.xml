@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:foregroundGravity="center"
+        android:layout_marginTop="5dp"
+        app:cardElevation="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp">
+
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:id="@+id/info_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VETERİNERİM"
+                android:textStyle="bold"
+                android:gravity="top|center"
+                android:layout_marginTop="30dp"
+                android:textColor="#d35400"
+                android:textSize="20dp"
+
+                />
+            <ImageView
+                android:layout_width="128dp"
+                android:layout_height="128dp"
+                android:background="@drawable/veterinarian"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
+                />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="30dp"
+
+                >
+                <EditText
+                    android:id="@+id/loginMailAdres"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="EMAİL"
+                    >
+                </EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="30dp"
+
+                >
+
+                <EditText
+                    android:id="@+id/loginPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="ŞİFRE"
+                    android:inputType="textPassword"
+                    android:textStyle="bold"
+
+                    ></EditText>
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/loginText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="Hesabınız yoksa...!"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:textColor="#d35400"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/loginButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="Giriş"
+                android:background="#FF5364">
+
+            </com.google.android.material.button.MaterialButton>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

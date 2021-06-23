@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.UserPetsFragment">
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dp"
+        card_view:cardBackgroundColor="#c7ebf0"
+        card_view:cardCornerRadius="30dp"
+        card_view:cardElevation="20dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/petListrecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="15dp"
+            android:layout_marginTop="25dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Petleriniz"
+            android:textSize="25dp"
+            android:textStyle="bold"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
+
